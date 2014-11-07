@@ -1,0 +1,9 @@
+<h1>This is the new user view</h1>
+
+<form accept-charset="UTF-8" action="/users" method="post">
+  <label for="username">username: </label><input type="text" id="username" name="user[username]"><br>
+  <label for="email">email: </label><input type="text" id="email" name="user[email]"><br>
+  <label for="password">password: </label><input type="password" id="password" name="user[password]"><br>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="submit" value="Submit">
+</form> 
